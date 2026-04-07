@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haircutting-VLA Benchmark</title>
+  <meta name="description" content="Haircutting-VLA Benchmark: a staged benchmark for VLA models on haircutting-related robotic skills." />
+  <link rel="canonical" href="https://haircutting-vla.vercel.app/" />
+  <meta property="og:title" content="Haircutting-VLA Benchmark" />
+  <meta property="og:description" content="Staged benchmark for language grounding, visual understanding, tool use, and workflow-level haircutting skills." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://haircutting-vla.vercel.app/" />
+  <meta property="og:image" content="https://haircutting-vla.vercel.app/docs/assets/overview-phase-map.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/styles.css?v=20260407d" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(','\\)'], ['$', '$']], displayMath: [['\\[','\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <div>
+          <div class="badge">VLA Benchmark</div>
+          <h1>Haircutting-VLA Benchmark</h1>
+          <p class="subtitle">Staged benchmark for language grounding, visual understanding, tool use, and workflow-level haircutting skills.</p>
+          <div class="hero-meta">
+            <span>5 Phases</span>
+            <span>Bilingual Spec</span>
+            <span>Composable Skills</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn" href="https://github.com/Knightsll/Haircutting-VLA" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a class="btn btn-secondary" href="/docs/content.md" target="_blank">Raw Markdown</a>
+          </div>
+        </div>
+
+        <div class="lang-control">
+          <label for="lang-select">Language</label>
+          <select id="lang-select" aria-label="Language selector">
+            <option value="en" selected>English</option>
+            <option value="zh">中文</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <section class="panel figure-panel">
+      <h2>Benchmark Phase Map</h2>
+      <figure class="overview-figure">
+        <img src="/docs/assets/overview-phase-map.jpg" alt="Haircutting-VLA benchmark phase overview" />
+      </figure>
+    </section>
+
+    <aside class="panel toc-panel">
+      <h3>Navigator</h3>
+      <details class="nav-group" open>
+        <summary>Overview</summary>
+        <nav id="toc"></nav>
+      </details>
+
+    </aside>
+
+    <section class="panel content-panel">
+      <article id="content-en" class="md"></article>
+      <article id="content-zh" class="md hidden"></article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">Haircutting-VLA · Bilingual benchmark overview</div>
+  </footer>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="/docs/app.js?v=20260407f"></script>
+</body>
+</html>

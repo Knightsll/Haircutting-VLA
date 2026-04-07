@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haircutting-VLA Phase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/docs/styles.css?v=20260407d" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(','\\)'], ['$', '$']], displayMath: [['\\[','\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <div>
+          <div class="badge">Phase Detail</div>
+          <h1 id="phase-page-title">Haircutting-VLA Phase</h1>
+          <p class="subtitle">Detailed benchmark specification per phase.</p>
+          <div class="hero-actions">
+            <a class="btn btn-secondary" href="/docs/">← Back to Overview</a>
+          </div>
+        </div>
+        <div class="lang-control">
+          <label for="phase-select">Phase</label>
+          <select id="phase-select" aria-label="Phase selector">
+            <option value="1">Phase 1</option>
+            <option value="2">Phase 2</option>
+            <option value="3">Phase 3</option>
+            <option value="4">Phase 4</option>
+            <option value="5">Phase 5</option>
+          </select>
+          <label for="lang-select">Language</label>
+          <select id="lang-select" aria-label="Language selector">
+            <option value="en" selected>English</option>
+            <option value="zh">中文</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap layout phase-layout">
+    <aside class="panel toc-panel phase-nav">
+      <h3>Navigator</h3>
+      <nav id="toc"></nav>
+    </aside>
+
+    <section class="panel content-panel">
+      <figure id="phase-hero" class="phase-hero hidden">
+        <img src="/docs/assets/phase1-overview.jpg" alt="Phase 1 overview" />
+      </figure>
+      <article id="content-en" class="md"></article>
+      <article id="content-zh" class="md hidden"></article>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="/docs/phase.js?v=20260407d"></script>
+</body>
+</html>
